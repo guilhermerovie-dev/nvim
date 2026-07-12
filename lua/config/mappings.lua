@@ -98,4 +98,4 @@ map("n", "<leader>nn", function() --toggle relative vs absolute line numbers
 end)
 
 -- rodar arquivo python atual
-map("n", "<leader>py", ":w<CR>:!python %<CR>") 
+map("n", "<leader>py", ":w<CR>:belowright split | terminal python %<CR>i")

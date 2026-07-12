@@ -56,6 +56,15 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 vim.lsp.config('basedpyright', {
   capabilities = capabilities,
+  settings = {
+    basedpyright = {
+      analysis = {
+        typeCheckingMode = "standard", -- Muda de "strict" para o modo normal do Python
+      },
+    },
+  },
 })
 
 vim.lsp.enable('basedpyright')
+
+
